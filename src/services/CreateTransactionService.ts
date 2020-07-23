@@ -17,7 +17,7 @@ class CreateTransactionService {
     // TODO
 
     if (!['income', 'outcome'].includes(type)) {
-      throw new Error('Transaction type is value')
+      throw new Error('Transaction type is value');
     }
 
     const { total } = this.transactionsRepository.getBalance();
